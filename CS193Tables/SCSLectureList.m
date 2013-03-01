@@ -15,4 +15,10 @@
 
 @implementation SCSLectureList
 
+// Custom getter
+- (NSArray *)privateListOfLectures {
+	if (_privateListOfLectures == nil) {
+		_privateListOfLectures = @[[[SCSLecture alloc] initWithNumber:1 title:@"MVC Intro to Objective-C" URL:<#(NSString *)#>]
+	}
+}
 @end
