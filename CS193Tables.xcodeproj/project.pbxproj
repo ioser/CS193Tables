@@ -19,6 +19,8 @@
 		9AAE8C0F16E06FCD00347303 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AAE8C0D16E06FCD00347303 /* MainStoryboard.storyboard */; };
 		9AAE8C1216E06FCD00347303 /* SCSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE8C1116E06FCD00347303 /* SCSMasterViewController.m */; };
 		9AAE8C1516E06FCD00347303 /* SCSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE8C1416E06FCD00347303 /* SCSDetailViewController.m */; };
+		9AAE8C1D16E0700500347303 /* SCSLecture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE8C1C16E0700500347303 /* SCSLecture.m */; };
+		9AAE8C2016E0726800347303 /* SCSLectureList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE8C1F16E0726800347303 /* SCSLectureList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		9AAE8C1116E06FCD00347303 /* SCSMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSMasterViewController.m; sourceTree = "<group>"; };
 		9AAE8C1316E06FCD00347303 /* SCSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSDetailViewController.h; sourceTree = "<group>"; };
 		9AAE8C1416E06FCD00347303 /* SCSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSDetailViewController.m; sourceTree = "<group>"; };
+		9AAE8C1B16E0700500347303 /* SCSLecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSLecture.h; sourceTree = "<group>"; };
+		9AAE8C1C16E0700500347303 /* SCSLecture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSLecture.m; sourceTree = "<group>"; };
+		9AAE8C1E16E0726800347303 /* SCSLectureList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSLectureList.h; sourceTree = "<group>"; };
+		9AAE8C1F16E0726800347303 /* SCSLectureList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSLectureList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +92,10 @@
 		9AAE8BFB16E06FCD00347303 /* CS193Tables */ = {
 			isa = PBXGroup;
 			children = (
+				9AAE8C2116E0727A00347303 /* Model */,
+				9AAE8C0D16E06FCD00347303 /* MainStoryboard.storyboard */,
 				9AAE8C0416E06FCD00347303 /* SCSAppDelegate.h */,
 				9AAE8C0516E06FCD00347303 /* SCSAppDelegate.m */,
-				9AAE8C0D16E06FCD00347303 /* MainStoryboard.storyboard */,
 				9AAE8C1016E06FCD00347303 /* SCSMasterViewController.h */,
 				9AAE8C1116E06FCD00347303 /* SCSMasterViewController.m */,
 				9AAE8C1316E06FCD00347303 /* SCSDetailViewController.h */,
@@ -110,6 +117,17 @@
 				9AAE8C0B16E06FCD00347303 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AAE8C2116E0727A00347303 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AAE8C1B16E0700500347303 /* SCSLecture.h */,
+				9AAE8C1C16E0700500347303 /* SCSLecture.m */,
+				9AAE8C1E16E0726800347303 /* SCSLectureList.h */,
+				9AAE8C1F16E0726800347303 /* SCSLectureList.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +201,8 @@
 				9AAE8C0616E06FCD00347303 /* SCSAppDelegate.m in Sources */,
 				9AAE8C1216E06FCD00347303 /* SCSMasterViewController.m in Sources */,
 				9AAE8C1516E06FCD00347303 /* SCSDetailViewController.m in Sources */,
+				9AAE8C1D16E0700500347303 /* SCSLecture.m in Sources */,
+				9AAE8C2016E0726800347303 /* SCSLectureList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
