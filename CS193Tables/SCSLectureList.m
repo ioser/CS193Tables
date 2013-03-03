@@ -37,7 +37,7 @@
 									 title:@"MVC Intro to Objective-C"
 									   URL:[NSURL URLWithString:@"http://www.stanford.edu/class/cs193p/cgi-bin/drupal/system/files/lectures/Lecture%204_1.pdf"]],
 		[[SCSLecture alloc] initWithNumber:4
-									 title:@"MVC Intro to Objective-C"
+									 title:@"MVC Intro to Objective-C and a long winded explanation of how the earth spins and why the seasons are shorter than they should be considering how much the moon pulls on the earth."
 									   URL:[NSURL URLWithString:@"http://www.stanford.edu/class/cs193p/cgi-bin/drupal/system/files/lectures/Lecture%205_1.pdf"]],
 		[[SCSLecture alloc] initWithNumber:5
 									 title:@"MVC Intro to Objective-C"

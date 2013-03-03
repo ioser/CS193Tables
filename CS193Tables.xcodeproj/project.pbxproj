@@ -21,6 +21,7 @@
 		9AAE8C1516E06FCD00347303 /* SCSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE8C1416E06FCD00347303 /* SCSDetailViewController.m */; };
 		9AAE8C1D16E0700500347303 /* SCSLecture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE8C1C16E0700500347303 /* SCSLecture.m */; };
 		9AAE8C2016E0726800347303 /* SCSLectureList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE8C1F16E0726800347303 /* SCSLectureList.m */; };
+		9AD76FE316E327A900F42B47 /* SCSLectureInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD76FE216E327A900F42B47 /* SCSLectureInfoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		9AAE8C1C16E0700500347303 /* SCSLecture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSLecture.m; sourceTree = "<group>"; };
 		9AAE8C1E16E0726800347303 /* SCSLectureList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSLectureList.h; sourceTree = "<group>"; };
 		9AAE8C1F16E0726800347303 /* SCSLectureList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSLectureList.m; sourceTree = "<group>"; };
+		9AD76FE116E327A900F42B47 /* SCSLectureInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSLectureInfoCell.h; sourceTree = "<group>"; };
+		9AD76FE216E327A900F42B47 /* SCSLectureInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSLectureInfoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 			children = (
 				9AAE8C2116E0727A00347303 /* Model */,
 				9AAE8C0D16E06FCD00347303 /* MainStoryboard.storyboard */,
+				9AD76FE116E327A900F42B47 /* SCSLectureInfoCell.h */,
+				9AD76FE216E327A900F42B47 /* SCSLectureInfoCell.m */,
 				9AAE8C0416E06FCD00347303 /* SCSAppDelegate.h */,
 				9AAE8C0516E06FCD00347303 /* SCSAppDelegate.m */,
 				9AAE8C1016E06FCD00347303 /* SCSMasterViewController.h */,
@@ -203,6 +208,7 @@
 				9AAE8C1516E06FCD00347303 /* SCSDetailViewController.m in Sources */,
 				9AAE8C1D16E0700500347303 /* SCSLecture.m in Sources */,
 				9AAE8C2016E0726800347303 /* SCSLectureList.m in Sources */,
+				9AD76FE316E327A900F42B47 /* SCSLectureInfoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +331,7 @@
 				9AAE8C1A16E06FCD00347303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

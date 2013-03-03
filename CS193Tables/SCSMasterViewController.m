@@ -8,6 +8,7 @@
 
 #import "SCSMasterViewController.h"
 #import "SCSDetailViewController.h"
+#import "SCSLectureInfoCell.h"
 #import "SCSLecture.h"
 #import "SCSLectureList.h"
 
@@ -104,12 +105,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LectureCell" forIndexPath:indexPath];
+    SCSLectureInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LectureCell" forIndexPath:indexPath];
 	
 	SCSLecture *theLecture = self.lectureList[indexPath.row];
 	NSInteger lectureNumber = theLecture.lectureNumber;
-	cell.textLabel.text = [NSString stringWithFormat:@"Lecture %d", lectureNumber];
-	cell.detailTextLabel.text = theLecture.lectureTitle;
+	cell.lectureNumberLabel.text = [NSString stringWithFormat:@"Lecture %d", lectureNumber];
+	cell.lectureTitleLabel.text = theLecture.lectureTitle;
     return cell;
 }
 
