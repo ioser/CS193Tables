@@ -7,12 +7,14 @@
 //
 
 #import "SCSMasterViewController.h"
-
 #import "SCSDetailViewController.h"
+#import "SCSLecture.h"
+#import "SCSLectureList.h"
 
-@interface SCSMasterViewController () {
+@interface SCSMasterViewController ()<UITableViewDataSource, UITableViewDelegate> {
     NSMutableArray *_objects;
 }
+@property (strong, nonatomic) SCSLectureList *lectureList;
 @end
 
 @implementation SCSMasterViewController
@@ -49,25 +51,6 @@
 }
 
 #pragma mark - Table View
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-	return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-	return _objects.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-	NSDate *object = _objects[indexPath.row];
-	cell.textLabel.text = [object description];
-    return cell;
-}
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -109,5 +92,35 @@
         [[segue destinationViewController] setDetailItem:object];
     }
 }
+
+#pragma mark - UITableViewDataSource
+
+- (SCSLectureList *)lectureList {
+	if (_lectureList == nil) {
+		_lectureList = [[SCSLectureList alloc] init];
+	}
+	return _lectureList;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LectureCell" forIndexPath:indexPath];
+	
+	NSInteger lectureNumber = self.lectureList[indexPath.row].lectureNumber;
+	cell.textLabel.text = [NSString stringWithFormat:@"Lecture %d", lectureNumber];
+    return cell;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return [self.lectureList count];
+}
+
+#pragma mark - UITableViewDelegate
+
 
 @end

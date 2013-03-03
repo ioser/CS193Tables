@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SCSLecture.h"
 
 @interface SCSLectureList : NSObject
 
+- (NSInteger)count;
+- (SCSLecture *)objectAtIndexedSubscript:(NSInteger)lectureNumber;
 @end
