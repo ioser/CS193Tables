@@ -106,8 +106,10 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LectureCell" forIndexPath:indexPath];
 	
-	NSInteger lectureNumber = self.lectureList[indexPath.row].lectureNumber;
+	SCSLecture *theLecture = self.lectureList[indexPath.row];
+	NSInteger lectureNumber = theLecture.lectureNumber;
 	cell.textLabel.text = [NSString stringWithFormat:@"Lecture %d", lectureNumber];
+	cell.detailTextLabel.text = theLecture.lectureTitle;
     return cell;
 }
 

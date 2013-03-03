@@ -52,7 +52,7 @@
 									 title:@"MVC Intro to Objective-C"
 									   URL:[NSURL URLWithString:@"http://www.stanford.edu/class/cs193p/cgi-bin/drupal/system/files/lectures/Lecture%203_2.pdf"]],
 		[[SCSLecture alloc] initWithNumber:9
-									 title:@"MVC Intro to Objective-C"
+									 title:@"Table Views"
 									   URL:[NSURL URLWithString:@"http://www.stanford.edu/class/cs193p/cgi-bin/drupal/system/files/lectures/Lecture%204_1.pdf"]],
 		[[SCSLecture alloc] initWithNumber:10
 									 title:@"MVC Intro to Objective-C"
