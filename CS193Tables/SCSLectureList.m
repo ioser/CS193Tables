@@ -31,8 +31,8 @@
 														  title:@"MVC Intro to Objective-C"
 															URL:[NSURL URLWithString:@"http://www.stanford.edu/class/cs193p/cgi-bin/drupal/system/files/lectures/Lecture%201_1.pdf"]],
 		[[SCSLecture alloc] initWithNumber:2
-									 title:@"MVC Intro to Objective-C"
-									   URL:[NSURL URLWithString:@"http://www.stanford.edu/class/cs193p/cgi-bin/drupal/system/files/lectures/Lecture%203_2.pdf"]],
+									 title:@"MVC Intro to Objective-C Stanford URL"
+									   URL:[NSURL URLWithString:@"http://www.stanford.edu"]],
 		[[SCSLecture alloc] initWithNumber:3
 									 title:@"MVC Intro to Objective-C"
 									   URL:[NSURL URLWithString:@"http://www.stanford.edu/class/cs193p/cgi-bin/drupal/system/files/lectures/Lecture%204_1.pdf"]],

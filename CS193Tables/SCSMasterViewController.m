@@ -7,7 +7,7 @@
 //
 
 #import "SCSMasterViewController.h"
-#import "SCSDetailViewController.h"
+#import "SCSLectureViewController.h"
 #import "SCSLectureInfoCell.h"
 #import "SCSLecture.h"
 #import "SCSLectureList.h"
@@ -88,10 +88,11 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        SCSLectureViewController *lectureViewController = segue.destinationViewController;
+		NSInteger rowNumber = [self.tableView indexPathForSelectedRow].row;
+		lectureViewController.lecture = self.lectureList[rowNumber];
     }
+	NSLog(@"Segue id is %@", [segue identifier]);
 }
 
 #pragma mark - UITableViewDataSource
